@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      .navbar-nav {
+        margin: 0 auto;
+      }
+
+      .nav-link {
+        margin: 0 15px;
+        /* Adjust the value to increase or decrease the gap */
+        font-size: 17px;
+      }
+
+      .nav-btn {
+        background-color: #0ea2bd;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding: 8px 30px;
+      }
+
+      .nav-link:hover {
+        color: #32b0c7;
+        /* border-bottom: #32B0C7; */
+      }
+      .hero img {
+        max-width: 60%;
+        height: 350px;
+        margin-top: 8%;
+        animation: up-down 2s ease-in-out infinite alternate-reverse both;
+      }
+
+      @keyframes up-down {
+        0% {
+          transform: translateY(10px);
+        }
+
+        100% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .hero-text p {
+        font-size: 50px;
+        font-weight: lighter;
+        margin-top: 20px;
+      }
+      .hero-btn{
+        background-color: #0ea2bd; 
+        color: white
+      }
+      .collapse-heading :hover{
+        color: #0EA2BD;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigation-bar -->
+    <section>
+      <nav>
+        <div class="container-fluid">
+          <div class="row pt-4">
+            <div class="col-md-3">
+              <p class="fs-3">HeroBiz<span style="color: #32b0c7">.</span></p>
+            </div>
+            <div
+              class="col-md-6 navbar-expand-lg d-flex justify-content-center"
+            >
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <!-- dropdown-toggle for icon -->
+                  <!-- data-bs-toggle="dropdown" to show dropdown -->
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    DropDown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">DropDown 1</a></li>
+                    <li><a class="dropdown-item" href="#">DropDown 2</a></li>
+                    <li><a class="dropdown-item" href="#">DropDown 3</a></li>
+                    <li><a class="dropdown-item" href="#">DropDown 4</a></li>
+                    <li><a class="dropdown-item" href="#">DropDown 5</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 d-flex justify-content-end h-50">
+              <div
+                class="btn nav-btn"
+                style="background-color: #0ea2bd; color: white"
+              >
+                Get Started
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- hero-section -->
+
+    <section>
+      <div class="hero d-flex justify-content-center">
+        <img src="hero-img.svg" alt="" class="img-fluid animated" />
+      </div>
+      <div class="hero-text text-center">
+        <p class="text-center mt-5">
+          Welcome to <span style="color: #0ea2bd">HeroBiz</span>
+        </p>
+        <span class="fs-5 text-muted"
+          >Et voluptate esse accusantium accusamus natus reiciendis quidem
+          voluptates similique aut.</span
+        ><br />
+        <div class="d-flex justify-content-center">
+          <div
+            class="btn mt-4 ps-4 pe-4 hero-btn"
+          >
+            Get Started
+          </div>
+          <div class="mt-4 ms-4 t">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="#0EA2BD"
+              class="bi bi-play-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+              />
+            </svg>
+            <span class="fs-5 ms-2 mt-2">Watch Video</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="accordion">
+        <div class="card">
+          <div class="card-header">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+              Non consectetur a erat nam at lectus urna duis?
+            </a>
+          </div>
+          <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body">
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </div>
+          </div>
+        </div>
+        <!-- second collapse -->
+
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+              Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+            </a>
+          </div>
+          <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+            </div>
+          </div>
+        </div>
+
+        <!-- third collapse -->
+        <div class="card">
+          <div class="card-header">
+            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+              Dolor sit amet consectetur adipiscing elit pellentesque?
+            </a>
+          </div>
+          <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="card-body">
+              Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1>Frequently Asked Questions</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+            <div class="accordion">
+              <div class="card">
+                <div class="card-header collapse-heading">
+                  <a class=" collapsed btn fw-bold  " data-bs-toggle="collapse" href="#collapseOne">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-question-circle pe-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                      <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                    </svg>
+                    Non consectetur a erat nam at lectus urna duis?
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body ps-4">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
+                </div>
+              </div>
+              <!-- second collapse -->
+      
+              <div class="card">
+                <div class="card-header collapse-heading">
+                  <a class="collapsed btn fw-bold" data-bs-toggle="collapse" href="#collapseTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-question-circle pe-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                      <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                    </svg>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body ps-4">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+      
+              <!-- third collapse -->
+              <div class="card">
+                <div class="card-header collapse-heading">
+                  <a class="collapsed btn fw-bold" data-bs-toggle="collapse" href="#collapseThree">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-question-circle pe-2" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                      <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+                    </svg>
+                    Dolor sit amet consectetur adipiscing elit pellentesque?
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body ps-4">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+
+          </div>
+          <div class="col-md-5"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
